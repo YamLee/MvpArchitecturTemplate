@@ -22,12 +22,26 @@
             help="The name of the activity class to create"/>
 
     <parameter
+            id="activityPackageName"
+            name="Activity package name"
+            type="string"
+            constraints="package"
+            default="com.mycompany.myapp"/>
+
+    <parameter
             id="fragmentClass"
             name="Fragment Name"
             type="string"
             constraints="class|unique|nonempty"
             default="MvpFragment"
             help="The name of the fragment class to create for the activity"/>
+
+    <parameter
+            id="fragmentPackageName"
+            name="Fragment package name"
+            type="string"
+            constraints="package"
+            default="com.mycompany.myapp"/>
 
     <parameter
             id="layoutName"
@@ -39,13 +53,45 @@
             help="The name of the layout to create for the activity"/>
 
     <parameter
-            id="daggerComponentName"
+            id="daggerComponentClass"
             name="Dagger Component Name"
             type="string"
             constraints="class|unique|nonempty"
             suggest="MainComponent"
             default="MainComponent"
             help="The name of the dagger component to create for the activity"/>
+
+    <parameter
+            id="logicViewClass"
+            name="Logic View Name"
+            type="string"
+            constraints="class|unique|nonempty"
+            suggest="MvpView"
+            default="BaseUiLogicView"
+            help="The name of the logic view  to create for the fragment"/>
+
+    <parameter
+            id="logicViewPackageName"
+            name="Logic view package name"
+            type="string"
+            constraints="package"
+            default="com.mycompany.myapp"/>
+
+    <parameter
+            id="presenterClass"
+            name="Presenter Name"
+            type="string"
+            constraints="class|unique|nonempty"
+            suggest="MvpPresenter"
+            default="BasePresenter"
+            help="The name of the presenter to create for the fragment"/>
+
+    <parameter
+            id="presenterPackageName"
+            name="presenter package name"
+            type="string"
+            constraints="package"
+            default="com.mycompany.myapp"/>
 
     <parameter
             id="activityTitle"
@@ -63,12 +109,6 @@
             default=""
             help="The hierarchical parent activity, used to provide a default implementation for the 'Up' button"/>
 
-    <parameter
-            id="packageName"
-            name="Package name"
-            type="string"
-            constraints="package"
-            default="com.mycompany.myapp"/>
 
     <thumbs>
         <thumb>template_login_activity.png</thumb>
