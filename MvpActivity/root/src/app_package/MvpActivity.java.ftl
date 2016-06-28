@@ -2,11 +2,13 @@ package ${activityPackageName};
 
 import android.os.Bundle;
 
+<#if applicationPackage??>
 import ${applicationPackage}.di.HasComponent;
 import ${applicationPackage}.di.components.Dagger${daggerComponentClass};
 import ${applicationPackage}.di.components.${daggerComponentClass};
 import ${applicationPackage}.di.modules.ActivityModule;
 import ${applicationPackage}.ui.BaseActivity;
+</#if>
 
 /**
  * Auto create,you need modify

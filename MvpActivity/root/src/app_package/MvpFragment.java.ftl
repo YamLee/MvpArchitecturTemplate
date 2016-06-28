@@ -8,10 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+<#if applicationPackage??>
 import  ${applicationPackage}.R;
 import  ${applicationPackage}.di.components.${daggerComponentClass};
 import  ${applicationPackage}.ui.BaseFragment;
 import  ${applicationPackage}t.ui.custom.AppBar;
+</#if>
 
 /**
  *  Auto create,you need modify

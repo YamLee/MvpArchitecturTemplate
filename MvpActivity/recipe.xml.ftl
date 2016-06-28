@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <recipe>
-<#if appCompat && !(hasDependency('com.android.support:appcompat-v7'))>
-    <dependency mavenUrl="com.android.support:appcompat-v7:${buildApi}.+"/>
-</#if>
+<#--<#if appCompat && !(hasDependency('com.android.support:appcompat-v7'))>-->
+    <#--<dependency mavenUrl="com.android.support:appcompat-v7:${buildApi}.+"/>-->
+<#--</#if>-->
 
-<#if (buildApi gte 22) && appCompat && !(hasDependency('com.android.support:design'))>
-    <dependency mavenUrl="com.android.support:design:${buildApi}.+"/>
-</#if>
+<#--<#if (buildApi gte 22) && appCompat && !(hasDependency('com.android.support:design'))>-->
+    <#--<dependency mavenUrl="com.android.support:design:${buildApi}.+"/>-->
+<#--</#if>-->
 
     <merge from="root/AndroidManifest.xml.ftl"
            to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml"/>

@@ -2,8 +2,9 @@ package ${presenterPackageName};
 
 import javax.inject.Inject;
 
+<#if applicationPackage??>
 import ${applicationPackage}.presenter.BasePresenter;
-
+</#if>
 /**
  * Created by yamlee on 6/28/16.
  */
