@@ -1,4 +1,4 @@
-package ${fragmentPackageName};
+package ${applicationPackage + fragmentPackageName};
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -12,7 +12,9 @@ import android.view.ViewGroup;
 import  ${applicationPackage}.R;
 import  ${applicationPackage}.di.components.${daggerComponentClass};
 import  ${applicationPackage}.ui.BaseFragment;
-import  ${applicationPackage}t.ui.custom.AppBar;
+import  ${applicationPackage}.ui.custom.AppBar;
+import  ${applicationPackage}.presenter.MvpPresenter;
+import  ${applicationPackage}.view.MvpView;
 </#if>
 
 /**
@@ -29,7 +31,7 @@ public class ${fragmentClass} extends BaseFragment<${presenterClass}> implements
     @Override
     public void onInitAppBar(AppBar appBar) {
         super.onInitAppBar(appBar);
-        appBar.setTitle("");
+        appBar.setTitle(R.string.${camelCaseToUnderscore(fragmentClass)}_title);
     }
 
     @Override

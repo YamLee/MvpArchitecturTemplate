@@ -1,9 +1,10 @@
-package ${presenterPackageName};
+package ${applicationPackage + presenterPackageName};
 
 import javax.inject.Inject;
 
 <#if applicationPackage??>
 import ${applicationPackage}.presenter.BasePresenter;
+import ${applicationPackage}.view.${logicViewClass};
 </#if>
 /**
  * Created by yamlee on 6/28/16.

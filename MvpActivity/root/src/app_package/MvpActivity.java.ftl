@@ -1,4 +1,4 @@
-package ${activityPackageName};
+package ${applicationPackage + activityPackageName};
 
 import android.os.Bundle;
 
@@ -8,6 +8,8 @@ import ${applicationPackage}.di.components.Dagger${daggerComponentClass};
 import ${applicationPackage}.di.components.${daggerComponentClass};
 import ${applicationPackage}.di.modules.ActivityModule;
 import ${applicationPackage}.ui.BaseActivity;
+import ${applicationPackage}.ui.fragment.${fragmentClass};
+import ${applicationPackage}.view.${logicViewClass};
 </#if>
 
 /**
@@ -24,8 +26,8 @@ public class ${activityClass} extends BaseActivity implements HasComponent<${dag
     }
 
     @Override
-    public Dagger${daggerComponentClass} getComponent() {
-        return ${daggerComponentClass}.builder()
+    public ${daggerComponentClass} getComponent() {
+        return  Dagger${daggerComponentClass}.builder()
                 .applicationComponent(getApplicationComponent())
                 .activityModule(new ActivityModule(this))
                 //you need add module here by hand write

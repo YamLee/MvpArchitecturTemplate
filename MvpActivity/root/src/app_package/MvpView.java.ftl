@@ -1,4 +1,4 @@
-package ${logicViewPackageName};
+package ${applicationPackage + logicViewPackageName};
 
 <#if applicationPackage??>
 import ${applicationPackage}.view.BaseUiLogicView;

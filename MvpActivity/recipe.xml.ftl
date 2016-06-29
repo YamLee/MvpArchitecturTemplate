@@ -14,8 +14,8 @@
     <#--<merge from="root/res/values/dimens.xml"-->
            <#--to="${escapeXmlAttribute(resOut)}/values/dimens.xml"/>-->
 
-    <#--<merge from="root/res/values/strings.xml.ftl"-->
-           <#--to="${escapeXmlAttribute(resOut)}/values/strings.xml"/>-->
+    <merge from="root/res/values/strings.xml.ftl"
+           to="${escapeXmlAttribute(resOut)}/values/strings.xml"/>
 
     <instantiate from="root/res/layout/fragment_mvp.xml.ftl"
                  to="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml"/>

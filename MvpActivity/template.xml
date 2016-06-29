@@ -2,7 +2,7 @@
 <template
         format="5"
         revision="6"
-        name="MVP Application"
+        name="MVP Activity"
         description="Create a new MVP activity with clean architecture"
         requireAppTheme="true"
         minApi="8"
@@ -12,6 +12,13 @@
 
     <category value="Activity"/>
     <formfactor value="Mobile"/>
+
+    <parameter
+            id="applicationPackage"
+            name="Application Package"
+            type="string"
+            constraints="package"
+            default="in.haojin.nearbymerchant"/>
 
     <parameter
             id="activityClass"
@@ -25,8 +32,8 @@
             id="activityPackageName"
             name="Activity package name"
             type="string"
-            constraints="package"
-            default="com.mycompany.myapp"/>
+            constraints="nonempty"
+            default=".ui.activity"/>
 
     <parameter
             id="fragmentClass"
@@ -40,8 +47,8 @@
             id="fragmentPackageName"
             name="Fragment package name"
             type="string"
-            constraints="package"
-            default="com.mycompany.myapp"/>
+            constraints="nonempty"
+            default=".ui.fragment"/>
 
     <parameter
             id="layoutName"
@@ -74,8 +81,8 @@
             id="logicViewPackageName"
             name="Logic view package name"
             type="string"
-            constraints="package"
-            default="com.mycompany.myapp"/>
+            constraints="nonempty"
+            default=".view"/>
 
     <parameter
             id="presenterClass"
@@ -88,18 +95,18 @@
 
     <parameter
             id="presenterPackageName"
-            name="presenter package name"
+            name="Presenter package name"
             type="string"
-            constraints="package"
-            default="com.mycompany.myapp"/>
+            constraints="nonempty"
+            default=".presenter"/>
 
     <parameter
-            id="activityTitle"
+            id="appBarTitle"
             name="Title"
             type="string"
             constraints="nonempty"
-            default="Mvp Activity"
-            help="The name of the activity."/>
+            default="Mvp fragment"
+            help="The name of the app bar title."/>
 
     <parameter
             id="parentActivityClass"
