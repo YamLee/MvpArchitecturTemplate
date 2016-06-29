@@ -13,8 +13,8 @@ import  ${applicationPackage}.R;
 import  ${applicationPackage}.di.components.${daggerComponentClass};
 import  ${applicationPackage}.ui.BaseFragment;
 import  ${applicationPackage}.ui.custom.AppBar;
-import  ${applicationPackage}.presenter.MvpPresenter;
-import  ${applicationPackage}.view.MvpView;
+import  ${applicationPackage}.presenter.${presenterPackageName + presenterClass};
+import  ${applicationPackage}.view.${logicViewPackageName + logicViewClass};
 </#if>
 
 /**

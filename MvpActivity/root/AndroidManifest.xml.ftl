@@ -4,7 +4,6 @@
         <activity android:name="${activityPackageName}.${activityClass}"
                   android:launchMode="standard"
                   android:screenOrientation="portrait"
-                  android:windowSoftInputMode="adjustResize|stateHidden">
-        </activity>
+                  android:windowSoftInputMode="adjustResize|stateHidden"/>
     </application>
 </manifest>

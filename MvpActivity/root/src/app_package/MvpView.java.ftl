@@ -4,7 +4,7 @@ package ${applicationPackage + logicViewPackageName};
 import ${applicationPackage}.view.BaseUiLogicView;
 </#if>
 /**
- * Created by yamlee on 6/28/16.
+ * Auto Created,You need modify
  */
 public interface ${logicViewClass} extends BaseUiLogicView {
     interface InteractionListener {

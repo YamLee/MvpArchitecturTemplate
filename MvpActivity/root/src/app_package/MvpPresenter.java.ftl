@@ -4,10 +4,10 @@ import javax.inject.Inject;
 
 <#if applicationPackage??>
 import ${applicationPackage}.presenter.BasePresenter;
-import ${applicationPackage}.view.${logicViewClass};
+import ${applicationPackage}.view.${logicViewPackageName + logicViewClass};
 </#if>
 /**
- * Created by yamlee on 6/28/16.
+ * Auto Created
  */
 public class ${presenterClass} extends BasePresenter {
     private ${logicViewClass} view;
