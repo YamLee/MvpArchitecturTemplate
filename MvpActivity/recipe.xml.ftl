@@ -34,4 +34,10 @@
 
     <open file="${escapeXmlAttribute(srcOut)}/${slashedPackageName(presenterPackageName)}/${presenterClass}.java"/>
 
+    <open file="${escapeXmlAttribute(srcOut)}/${slashedPackageName(activityPackageName)}/${activityClass}.java"/>
+
+    <open file="${escapeXmlAttribute(srcOut)}/${slashedPackageName(fragmentPackageName)}/${fragmentClass}.java"/>
+
+    <open file="${escapeXmlAttribute(srcOut)}/${slashedPackageName(logicViewPackageName)}/${logicViewClass}.java"/>
+
 </recipe>

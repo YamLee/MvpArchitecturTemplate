@@ -8,8 +8,8 @@ import ${applicationPackage}.di.components.Dagger${daggerComponentClass};
 import ${applicationPackage}.di.components.${daggerComponentClass};
 import ${applicationPackage}.di.modules.ActivityModule;
 import ${applicationPackage}.ui.BaseActivity;
-import ${applicationPackage}.${fragmentPackageName + fragmentClass};
-import ${applicationPackage}.${logicViewPackageName + logicViewClass};
+import ${applicationPackage+fragmentPackageName}.${fragmentClass};
+import ${applicationPackage+logicViewPackageName}.${logicViewClass};
 </#if>
 
 /**
