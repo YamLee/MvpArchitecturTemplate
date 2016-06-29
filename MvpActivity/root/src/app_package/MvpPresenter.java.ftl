@@ -4,7 +4,7 @@ import javax.inject.Inject;
 
 <#if applicationPackage??>
 import ${applicationPackage}.presenter.BasePresenter;
-import ${applicationPackage}.view.${logicViewPackageName + logicViewClass};
+import ${applicationPackage + logicViewPackageName + logicViewClass};
 </#if>
 /**
  * Auto Created
